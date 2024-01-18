@@ -1,9 +1,9 @@
 n = int(input())
 if n >= 3000 :
     print('book')
-if n >= 1000 :
+if 3000 > n >= 1000 :
     print('mask')
-if n >= 500 :
+if 1000 > n >= 500 :
     print('pen')
 else :
     print('no')
