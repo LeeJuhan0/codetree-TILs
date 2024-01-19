@@ -1,5 +1,6 @@
+N = int(input())
 number=[]
-for j in range(1000000):
+for j in range(N**N):
     for i in range(1,10) :
         number.append(i)
 
@@ -9,5 +10,5 @@ def numberrectangle(n) :
             print(number[i], end=" ")
         print()    
 
-N = int(input())
+
 numberrectangle(N)
