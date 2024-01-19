@@ -1,7 +1,7 @@
 n = int(input())
 a = list(map(int, input().split()))
 
-minmum= 1000000
+minmum= 2**31-1
 for elem in a :
     if minmum > elem :
         minmum = elem
