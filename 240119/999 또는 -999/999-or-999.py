@@ -8,7 +8,7 @@ for i in num :
         maximum = i
 
 for j in num :
-    if j < minimum :
+    if j < minimum and i > -999 :
         minimum = j
 
 print(f'{maximum} {minimum}')
