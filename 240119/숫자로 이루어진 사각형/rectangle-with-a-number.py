@@ -1,6 +1,6 @@
 def numberrectangle(n) :
     number=[]
-    for j in range(1000000):
+    for j in range(10000000):
         for i in range(1,10) :
             number.append(i)
     for k in range(n):
