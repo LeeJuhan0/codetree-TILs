@@ -1,13 +1,11 @@
 N = int(input())
-number=[]
-for j in range(N**N):
-    for i in range(1,10) :
-        number.append(i)
+number=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 
 def numberrectangle(n) :
     for k in range(n):
-        for i in range(4*k,n+4*k):
-            print(number[i], end=" ")
+        for i in range(n):
+            print(number[(i+4*k)%9], end=" ")
         print()    
 
 
