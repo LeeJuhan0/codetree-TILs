@@ -1,10 +1,10 @@
 num = list(map(int, input().split()))
 
-maximum = -998
-minimum = 998
+maximum = -999
+minimum = 999
 
 for i in num :
-    if i > maximum and i < 999:
+    if i > maximum and i < 999 :
         maximum = i
 
 for j in num :
