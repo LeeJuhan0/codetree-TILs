@@ -13,5 +13,6 @@ list = []
 for i in range(a, b+1) :
     if is_prime(i) :
         list.append(i)
-
-print(sum(list))
+        print(sum(list))
+    elif a == b :
+        print('0')
