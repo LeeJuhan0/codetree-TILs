@@ -6,13 +6,12 @@ def calendar2021(M, D) :
                     return True
     if M == 4 or M == 6 or M == 9 or M == 11 :
         for i in range(1,31) :
-            if D == j :
+            if D == i :
                 return True
     if M == 2:
         for i in range(1,29) :
-            if D == j :
+            if D == i :
                 return True
-    
     return False
 
 M, D = map(int, input().split())
