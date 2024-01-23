@@ -6,7 +6,7 @@ def leap_year(n) :
     elif n % 4 != 0 and n % 100 != 0 and n % 400 != 0 :
         return False
     else :
-        return true
+        return True
 
 a = int(input())
 
