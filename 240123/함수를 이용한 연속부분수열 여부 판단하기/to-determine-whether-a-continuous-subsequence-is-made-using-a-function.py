@@ -4,7 +4,7 @@ def Consecutive_Number_Sub_Sequence_Judge(A, B):
     listA = list(map(int, input().split()))
     listB = list(map(int, input().split()))
     cnt = 0    
-    for i in range(0, A) :
+    for i in range(0, A+1) :
         for j in range(0, i) : 
             if listA[j:i] == listB :
                 cnt += 1
