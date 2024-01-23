@@ -2,7 +2,7 @@ a, b, c = map(str, input().split())
 
 def calculator(a, b, c) :
     mul = int(a)*int(c)
-    dvi = int(a)/int(c)
+    dvi = int(a)//int(c)
     plu = int(a)+int(c)
     miu = int(a)-int(c)
     if b == '+' :
