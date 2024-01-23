@@ -6,7 +6,7 @@ def Consecutive_Number_Sub_Sequence_Judge(A, B):
     cnt = 0    
     for i in range(0, A) :
         for j in range(0, A) : 
-            if listA[i:j] == listB :
+            if listA[j:i] == listB :
                 cnt += 1
                 
     if cnt >= 1:
