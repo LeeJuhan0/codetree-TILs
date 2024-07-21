@@ -6,6 +6,7 @@ for i in range(n):
     row = list(map(int, input().split()))
     list1.append(row)
 
+
 def Continuous_check(a):
     global result_cnt
     cnt = 1
@@ -15,7 +16,8 @@ def Continuous_check(a):
             if cnt >= m :
                 result_cnt += 1
                 break
-
+        else :
+            cnt = 1
 
 if m == 1:
     print(n*2)
