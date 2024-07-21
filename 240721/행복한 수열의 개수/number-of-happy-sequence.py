@@ -12,9 +12,11 @@ def Continuous_check(a):
     for i in range(a-1):
         if new_list[i] == new_list[i+1] :
             cnt += 1
-            if cnt >= m or cnt == m:
+            if cnt >= m :
                 result_cnt += 1
                 break
+    if m == 1:
+        result_cnt += 1
 
 #가로부터 체크
 for i in range(n):
