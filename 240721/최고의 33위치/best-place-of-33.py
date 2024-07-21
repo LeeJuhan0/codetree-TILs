@@ -8,11 +8,12 @@ for i in range(n):
 
 
 for k in range(n-2):
-    cnt_of_1 = 0
-    for i in range(3):
-        for j in range(3):
-            if list1[i+k][j+k] == 1:
-                cnt_of_1 += 1
-    result_list.append(cnt_of_1)
+    for l in range(n-2):
+        cnt_of_1 = 0
+        for i in range(3):
+            for j in range(3):
+                if list1[i+k][j+l] == 1:
+                    cnt_of_1 += 1
+        result_list.append(cnt_of_1)
 
 print(max(result_list))
