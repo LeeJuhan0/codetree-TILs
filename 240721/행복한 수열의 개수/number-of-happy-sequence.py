@@ -37,4 +37,4 @@ else:
             new_list.append(row_part_element)
         Continuous_check(len(new_list))
 
-print(result_cnt)
+    print(result_cnt)
