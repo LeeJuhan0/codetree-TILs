@@ -15,8 +15,11 @@ def Continuous_check(a):
             if cnt >= m :
                 result_cnt += 1
                 break
-    if m == 1:
-        result_cnt += 1
+            elif m == 1:
+                result_cnt += 1
+                break
+
+
 
 #가로부터 체크
 for i in range(n):
