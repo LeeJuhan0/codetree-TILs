@@ -8,12 +8,14 @@ for i in range(n):
 
 def Continuous_check(a):
     global result_cnt
-    global m
     cnt = 1
     for i in range(a-1):
         if new_list[i] == new_list[i+1] :
             cnt += 1
-            if cnt >= m :
+            if m == 1:
+                result_cnt += 1
+                break
+            elif cnt >= m :
                 result_cnt += 1
                 break
 
