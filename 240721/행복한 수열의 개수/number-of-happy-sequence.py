@@ -12,7 +12,7 @@ def Continuous_check(a):
     for i in range(a-1):
         if new_list[i] == new_list[i+1] :
             cnt += 1
-            if cnt >= m :
+            if cnt >= m or cnt == m:
                 result_cnt += 1
                 break
 
