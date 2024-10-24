@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 list1 = []
 answerlist = []
-for _ in range(m):
+for _ in range(n):
     list2 = list(map(int, input().split()))
     list1.append(list2) 
 
