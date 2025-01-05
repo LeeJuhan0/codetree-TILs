@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
 
-        if (a == 1 || a ==3 || a== 5 || a == 7 || a==8 || a==10 || a==11) {
+        if (a == 1 || a ==3 || a== 5 || a == 7 || a==8 || a==10 || a==12) {
             System.out.print(31);
         }
 
