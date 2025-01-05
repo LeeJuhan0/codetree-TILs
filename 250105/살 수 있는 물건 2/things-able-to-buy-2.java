@@ -13,7 +13,7 @@ public class Main {
             System.out.print("mask");
         }
 
-        else if (n>=1000) {
+        else if (n>=500) {
             System.out.print("pen");
         }
 
