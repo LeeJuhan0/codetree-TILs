@@ -23,7 +23,7 @@ public class Main {
             }
 
             else {
-                System.out.print("F");
+                System.out.print("F ");
             }
         }
     }
