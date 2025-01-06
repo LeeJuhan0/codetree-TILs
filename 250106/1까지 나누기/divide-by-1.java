@@ -7,7 +7,7 @@ public class Main {
         int cnt = 0;
         
         for (int i =1 ; i <= 10 ; i++) {
-            if (n < 1) {
+            if (n <= 1) {
                 break;
             }
             n /= i;
