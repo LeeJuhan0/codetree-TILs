@@ -9,10 +9,10 @@ public class Main {
             sum+=i;
             if (sum>=n) {
                 sum-=i;
+                System.out.print(i);
                 break ;    
             }
             
         }
-        System.out.print(sum);
     }
 }
