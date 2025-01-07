@@ -9,7 +9,7 @@ public class Main {
 
         for (int i = 0 ; i < n; i++) {
             int a = sc.nextInt();
-            if (a != 0 && a%2==0) {
+            if ( a%2==0) {
                 arr[cnt] = a;
                 cnt++;
             }
