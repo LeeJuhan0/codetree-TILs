@@ -19,10 +19,10 @@ public class Main {
            
         }
 
-        for (int i = cnt ; i > cnt-3  ; i--) {
+        for (int i = cnt ; i >= cnt-2  ; i--) {
             sum += arr[i];
-            System.out.print(sum);
         }
+        System.out.print(sum);
         
     }
 }  
