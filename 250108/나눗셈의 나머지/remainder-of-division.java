@@ -8,12 +8,9 @@ public class Main {
         int[] cntarr = new int[10]; 
         int sum=0;
 
-        while (true) {
+        while (a>1) {
             cntarr[a % b]++;
-            a /= b;
-            if (a==0) {
-                break;
-            }
+            a =  a/b;
         }
 
         for (int i = 0 ; i < 10 ; i++) {
