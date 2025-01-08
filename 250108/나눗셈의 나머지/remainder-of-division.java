@@ -8,17 +8,19 @@ public class Main {
         int[] cntarr = new int[10]; 
         int sum=0;
 
-        while(a/b>0) {
+        while (true) {
             cntarr[a % b]++;
             a /= b;
+            if (a==0) {
+                break;
+            }
         }
 
-        for (int i = 1 ; i < 10 ; i++) {
-            int sqrt = 1;
-            for (int j = cntarr[i] ; j>0 ; j--) {
-                sqrt *= i;
-                sum += sqrt;
-            }
+        for (int i = 0 ; i < 10 ; i++) {
+            if (cntarr[i] > 0) {
+                sum += cntarr[i]*cntarr[i];
+            } 
+
         }
         System.out.print(sum);
     }
