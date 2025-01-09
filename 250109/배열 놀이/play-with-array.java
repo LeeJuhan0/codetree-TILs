@@ -5,8 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int qcnt = sc.nextInt();
-        int[] arr = new int[n];
-        int flag0 = 0;        
+        int[] arr = new int[n];       
 
         for (int i = 0 ; i < n ; i++) {
             arr[i] = sc.nextInt();
@@ -20,6 +19,7 @@ public class Main {
             }
             else if (qnum == 2) {
                 int b = sc.nextInt();
+                int flag0 = 0; 
                 for (int j = 0 ; j < n; j++) {
                     if (arr[j]==b) {
                         System.out.println(j+1);
@@ -29,8 +29,7 @@ public class Main {
                 }
                 if (flag0==0){
                     System.out.println(0);
-                }
-                
+                }        
             }
             else {
                 int s = sc.nextInt();
