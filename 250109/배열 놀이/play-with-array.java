@@ -6,6 +6,7 @@ public class Main {
         int n = sc.nextInt();
         int qcnt = sc.nextInt();
         int[] arr = new int[n];
+        int flag0 = 0;        
 
         for (int i = 0 ; i < n ; i++) {
             arr[i] = sc.nextInt();
@@ -22,11 +23,14 @@ public class Main {
                 for (int j = 0 ; j < n; j++) {
                     if (arr[j]==b) {
                         System.out.println(j+1);
-                        idx++;
+                        flag0++;
                         break;
                     }
                 }
-                System.out.println(0);
+                if (flag0==0){
+                    System.out.println(0);
+                }
+                
             }
             else {
                 int s = sc.nextInt();
