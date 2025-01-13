@@ -23,9 +23,6 @@ public class Main {
                 if(arr1[j+i]==arr2[j]) {
                     cnt++;
                 }
-                else {
-                    con = false;
-                }
             }
             if (cnt == n2) {
                 System.out.print("Yes");
