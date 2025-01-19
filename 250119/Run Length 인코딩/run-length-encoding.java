@@ -12,7 +12,8 @@ public class Main {
         for (int i = 0 ; i < str.length(); i++) {
             arr[i] = str.charAt(i);
         }
-        
+        result_even_arr[even]=arr[0];
+        result_odd_arr[odd]=1;
         for (int i = 1 ; i < str.length(); i++) {
             if(arr[i]==arr[i-1]) {
                 cnt++;
