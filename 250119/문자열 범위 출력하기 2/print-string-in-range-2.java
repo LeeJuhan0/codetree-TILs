@@ -14,7 +14,7 @@ public class Main {
         else {
             max = n;
         }
-        for(int i = max-1; i >= max-n; i--)
+        for(int i = str.length()-1; i >= max-n; i--)
             System.out.print(str.charAt(i));
     }
 }
