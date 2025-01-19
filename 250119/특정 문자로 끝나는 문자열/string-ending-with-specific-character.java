@@ -17,7 +17,7 @@ public class Main {
             }
         }
         if(zero==false) {
-            System.out.print("None")
+            System.out.print("None");
         }
 
     }
