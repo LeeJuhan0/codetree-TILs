@@ -14,8 +14,9 @@ public class Main {
         for (int i = 0 ; i < n ; i++) {
             arr[i] = sc.next();
             for (int j = 0 ; j < str.length() ; j++) {
-                if (arr[i].charAt(j) != str.charAt(j)) {
+                if (arr[i].length() < str.length() || arr[i].charAt(j) != str.charAt(j)) {
                     same = false;
+                    break;
                 }
             }
             if (same) {
