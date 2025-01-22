@@ -31,7 +31,7 @@ public class Main {
 
         Arrays.sort(students); // 국어 점수 기준 오름차순 정렬
 
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < n; i++)
             System.out.println(students[i].name + " " + students[i].height + " " + students[i].weight);
     }
 }
