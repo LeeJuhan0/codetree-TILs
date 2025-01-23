@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int[][] arr = new int[n][m];
+        int[][] arr = new int[n+1][m+1];
         char[] dir = new char[]{'E','S','W','N'};
         int x = 0, y = 0, y_right_wall = m, y_left_wall = -1, x_ceiling = n, x_floor = -1, num = 0, value = 1;
         arr[0][0] = value;
@@ -57,14 +57,7 @@ public class Main {
             value++;
             arr[x][y] = value;
 
-            if (n*m == value) {
-                break;
-            }
-        }
-
-        for (int i = 0; i < n; i++) {
-
-            if (n*m == value) {
+            if (n*m <= value) {
                 break;
             }
         }
