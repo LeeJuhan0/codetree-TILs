@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int n = 29;
-        int[] digits = new int[20];
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] digits = new int[n+1];
         int cnt = 0;
 
         while (true) {
