@@ -81,6 +81,6 @@ public class Main {
             }
         }
         System.out.println((flag0) ? 0 : win_num);
-        System.out.print(win_center_y_idx + " " + win_center_x_idx);
+        System.out.print((flag0) ? "" : win_center_y_idx + " " + win_center_x_idx);
     }
 }
