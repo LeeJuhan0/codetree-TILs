@@ -8,6 +8,7 @@ public class Main {
         for(int i = 0 ; i < n ; i++) {
             arr[i] = sc.nextInt();
         }
+        boolean nothing = true;
         boolean carry = false;
         int maxvalue = 0 , curvalue ;
         for(int i = 0 ; i < n-2 ; i++) {
@@ -23,12 +24,13 @@ public class Main {
                     if(!carry) {
                         curvalue = arr[i] + arr[j] + arr[k];
                         maxvalue = Math.max(curvalue,maxvalue);
+                        nothing = false;
                     }
                     carry = false;
                 }
             }
         }
-        System.out.print(maxvalue);
+        System.out.print((nothing)? "-1" : maxvalue);
     }
 }
 
