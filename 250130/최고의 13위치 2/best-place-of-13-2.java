@@ -24,8 +24,8 @@ public class Main {
         }
         if(n>5) {
             for(int i = 0; i < n ; i++) {
-                for(int j = 0; j < n-3 ; j++) {
-                    for(int l = j+3; l < n ; l++) {
+                for(int j = 0; j < n-5 ; j++) {
+                    for(int l = j+3; l < n-2 ; l++) {
                         curcnt = arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i][l] +arr[i][l+1] + arr[i][l+2];
                         maxcnt = Math.max(curcnt, maxcnt);
                         curcnt = 0;   
