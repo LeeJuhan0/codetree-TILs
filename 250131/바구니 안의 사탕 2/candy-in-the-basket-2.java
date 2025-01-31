@@ -10,10 +10,15 @@ public class Main {
         for(int i = 0 ; i < n ; i++){
             int value = sc.nextInt();
             int idx = sc.nextInt();
-            arr[idx] = value;
+            if(arr[idx-1] == 0) {
+                arr[idx-1] = value;
+            }
+            else {
+                arr[idx-1] += value;
+            }
         }
        
-        int maxsum = 0, sum = 0;
+        int maxsum = 0, sum = 0, cnt = 0;
         for(int i = k ; i < 100-k ; i++){
             for(int j = i-k ; j <= i+k ; j++) {
                 sum += arr[j];
