@@ -26,6 +26,11 @@ public class Main {
             maxsum = Math.max(sum, maxsum);
             sum = 0;
         }
+        if(k >= 50) {
+            for(int i = 0 ; i < 100 ; i++) {
+                maxsum += arr[i];
+            }
+        }
         System.out.print(maxsum);
     }
 }
