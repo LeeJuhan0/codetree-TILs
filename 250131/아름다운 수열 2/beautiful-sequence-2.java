@@ -22,11 +22,12 @@ public class Main {
                     if(arr_B[k] == arrA[j]){
                         arr_B[k] = -1;
                         cnt++;
+                        break;
                     }
                 }
             }
             if(cnt == m){
-                 ans++;
+                ans++;
             }
         }
         System.out.print(ans);
