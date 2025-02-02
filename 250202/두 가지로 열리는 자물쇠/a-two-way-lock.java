@@ -14,7 +14,10 @@ public class Main {
         for(int i = 1 ; i <= n ; i++) {
             for(int j = 1 ; j <= n ; j++) {
                 for(int k = 1; k <= n ; k++) {
-                    if(((Math.abs(a-i) <= 2 || Math.abs(a+n-i) <= 2) && (Math.abs(b-j) <= 2 || Math.abs(b+n-j) <= 2) && (Math.abs(c-k) <= 2 || Math.abs(c+n-k) <= 2 )) || ((Math.abs(d-i) <= 2 || Math.abs(d+n-i) <= 2)&& (Math.abs(e-j) <= 2 || Math.abs(e+n-j) <= 2) && (Math.abs(f-k) <= 2 || Math.abs(f+n-k) <= 2  ))) {
+                    if((Math.abs(a-i) <= 2 || Math.abs(a+n-i) <=  2|| Math.abs(a-i-n) <=  2 ) && (Math.abs(b-j) <= 2 || Math.abs(b+n-j) <= 2 || Math.abs(b-j-n) <= 2 ) && (Math.abs(c-k) <= 2 || Math.abs(c+n-k) <= 2 || Math.abs(c-k-n) <= 2 )) {
+                        cnt++;
+                    }
+                    else if((Math.abs(d-i) <= 2 || Math.abs(d+n-i) <= 2 || Math.abs(d-i-n) <= 2)&& (Math.abs(e-j) <= 2 || Math.abs(e+n-j) <= 2 || Math.abs(e-j-n) <= 2) && (Math.abs(f-k) <= 2 || Math.abs(f+n-k) <= 2 || Math.abs(f-k-n) <= 2  )) {
                         cnt++;
                     }
                 }
