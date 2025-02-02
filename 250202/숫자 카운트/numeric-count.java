@@ -10,8 +10,8 @@ public class Main {
             int first = sc.nextInt();
             int second = sc.nextInt();
             for(int j = 1; j <= 9 ; j++) {
-                for(int k = 0 ; k <= 9 ; k++) {
-                    for(int l = 0 ; l <= 9 ; l++) {
+                for(int k = 1 ; k <= 9 ; k++) {
+                    for(int l = 1 ; l <= 9 ; l++) {
                         int curfirst = 0, cursecond = 0;
                         if((num/100)%10 == j) {
                             curfirst++;
@@ -33,6 +33,9 @@ public class Main {
                         }
                         if(curfirst == first && second == cursecond){
                             arr[j*100+k*10+l]++;
+                        }
+                        if(j==k || l==k || j==l) {
+                            arr[j*100+k*10+l]--;
                         }
                     }
                 }
