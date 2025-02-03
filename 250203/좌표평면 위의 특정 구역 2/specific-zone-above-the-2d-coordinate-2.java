@@ -19,7 +19,7 @@ public class Main {
                 max_x = Math.max(max_x, arr[0][j]);
                 max_y = Math.max(max_y, arr[1][j]);
                 min_x = Math.min(min_x, arr[0][j]);
-                min_y = Math.min(min_x, arr[1][j]);
+                min_y = Math.min(min_y, arr[1][j]);
             }
             sqrt = (max_x-min_x)*(max_y-min_y);
             min_sqrt = Math.min(min_sqrt, sqrt);
