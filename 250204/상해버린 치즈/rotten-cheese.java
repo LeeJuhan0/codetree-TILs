@@ -33,7 +33,7 @@ public class Main {
                 if(d_arr[j][0] == s_arr[i][0] && d_arr[j][2] >= s_arr[i][1]) {
                     spoiled_cheese_num[d_arr[j][1]]=0;
                     for(int k = 0 ; k < d ; k++) {
-                        if(d_arr[k][1] == d_arr[j][1] && d_arr[k][2] <= s_arr[i][1] - 1) {
+                        if(d_arr[k][1] == d_arr[j][1] && d_arr[k][2] <= s_arr[i][1] - 1) { //이전에 먹은 치즈는 상한상태 유지
                             spoiled_cheese_num[d_arr[k][1]]=1;
                         }
                     } 
@@ -57,7 +57,7 @@ public class Main {
             }
         }
 
-        int ans = 0;
+        int ans = 0, max_ans =0;
         for(int i = 1 ; i < m+1 ; i++) {
             if(spoiled_cheese_num[i] == 1) {
                 for(int j = 0 ; j < d ; j++) {
@@ -65,14 +65,16 @@ public class Main {
                         havepillnum[d_arr[j][0]]++;
                     }
                 }
+                for(int k = 1 ; k < n+1 ; k++) {
+                    if(havepillnum[k] != 0) {
+                    ans++;
+                    }     
+                    havepillnum[k] = 0 ;
+                }
             }
+            max_ans = Math.max(ans,max_ans);
+            ans = 0;
         }
-        for(int i = 1 ; i < n+1 ; i++) {
-            if(havepillnum[i] != 0) {
-                ans++;
-            }
-        }
-       
-        System.out.print(ans);
+        System.out.print(max_ans);
     }
 }
