@@ -15,15 +15,14 @@ public class Main {
             d_arr[i][2] = sc.nextInt(); // 시간
         }
         for(int i = 0 ; i < s ; i++) {
-            s_arr[i][0] = sc.nextInt(); // 상한치즈번호
+            s_arr[i][0] = sc.nextInt(); // 아픈사람번호
             s_arr[i][1] = sc.nextInt(); // 배아픔발생시간
         }
         int[] havepillnum = new int[n+1];
         int[] spoiled_cheese_num = new int[m+1];
         for(int i = 0 ; i < d ; i++) {
             for(int j = 0 ; j < s ; j++) {
-                if(d_arr[i][1] == s_arr[j][0] && d_arr[i][2] <= s_arr[j][1] - 1) {
-                    havepillnum[d_arr[i][0]]++;
+                if(d_arr[i][0] == s_arr[j][0] && d_arr[i][2] <= s_arr[j][1] - 1) {
                     spoiled_cheese_num[d_arr[i][1]]++;
                 }                
             }
