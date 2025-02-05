@@ -6,7 +6,7 @@ public class Main {
         int x = sc.nextInt();
         int y = sc.nextInt();
         int max_sum = 0 ,sum ;
-        for(int i = x ; i < y ; i++) {
+        for(int i = x ; i <= y ; i++) {
             if(i < 10) {
                 sum = i; 
             }
