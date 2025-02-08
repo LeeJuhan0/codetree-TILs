@@ -14,7 +14,6 @@ public class Main {
             y[i] = sc.nextInt();
             arr2d[y[i]][x[i]] = 1;
         }
-
         for(int i = 0 ; i < 11-2 ; i++) { // xxx
             for(int k = i+1 ; k < 11-1; k++) {
                 for(int l = k+1 ; l < 11; l++) {
@@ -88,7 +87,7 @@ public class Main {
                             }                        
                         }
                     }
-                    if(cnt == 33) {
+                    if(cnt == 31) {
                         line_3 = true;
                     }
                 }
@@ -114,7 +113,7 @@ public class Main {
                             }                                               
                         }
                     }                  
-                    if(cnt == 33) {
+                    if(cnt == 31) {
                         line_3 = true;
                     }
                 }
