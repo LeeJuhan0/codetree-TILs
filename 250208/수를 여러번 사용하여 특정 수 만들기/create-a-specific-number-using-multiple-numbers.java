@@ -10,7 +10,7 @@ public class Main {
         for(int i = 0 ; i < 1000; i++) {
             for(int j = 0 ; j < 1000; j++) {
                 int factor = a*i + b*j;
-                if(factor < c) {
+                if(factor <= c) {
                     max_factor = Math.max(factor,max_factor);
                 }
             }   
