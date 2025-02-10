@@ -10,7 +10,7 @@ public class Main {
         }
         
         for(int i = 0 ; i < n ; i++) {
-            int min = 100, idx = -1;
+            int min = 100, idx = i;
             for(int j = i ; j < n ; j++) {
                 if(arr[j] < min){
                     min = arr[j];
