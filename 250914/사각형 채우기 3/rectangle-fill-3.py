@@ -11,4 +11,4 @@ square[4] = 71
 for i in range(3,n+1) :
     square[i] = square[i-1]*3+square[i-2]-square[i-3]
 
-print(square[n])
+print(square[n]%1000000007)
