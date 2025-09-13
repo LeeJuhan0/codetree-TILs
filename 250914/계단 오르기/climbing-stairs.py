@@ -10,5 +10,5 @@ for i in range(3,n+1):
     climb[i] = climb[i-2] + climb[i - 3]
     
 
-print(climb[n]) 
+print(climb[n]%10007) 
 
