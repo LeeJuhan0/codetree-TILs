@@ -10,4 +10,4 @@ squar[4] = 5
 
 for i in range(4,n+1) :
     squar[i] = squar[i-2]*2 + squar[i-3]
-print(squar[n])
+print(squar[n]%10007)
