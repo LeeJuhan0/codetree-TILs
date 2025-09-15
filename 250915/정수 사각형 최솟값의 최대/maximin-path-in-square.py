@@ -13,7 +13,7 @@ for i in range(1,n) :
         if dp[i][j] <= minv :
             minv = dp[i][j]
 
-if grid[i][j] <= minv :
-        minv = grid[i][j]
+if grid[n-1][n-1] <= minv :
+        minv = grid[n-1][n-1]
 
 print(minv)
