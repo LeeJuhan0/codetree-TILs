@@ -12,5 +12,7 @@ for i in range(1,n) :
         dp[i][j] = max(grid[i-1][j],grid[i][j-1]) 
         if dp[i][j] <= minv :
             minv = dp[i][j]
-            
-print(minv)
+if n == 1: 
+    print(grid[0][0])
+else:
+    print(minv)
