@@ -1,8 +1,8 @@
 n, m = map(int, input().split())
 grid = [list(map(int, input().split())) for _ in range(n)]
 
-visited = [[0]*(n) for _ in range(n)]
-answer = [[0]*(n) for _ in range(n)]
+visited = [[0]*(m) for _ in range(n)]
+answer = [[0]*(m) for _ in range(n)]
 order = 1
 def dfs(x, y):
     global order
@@ -24,9 +24,10 @@ def can_go(x,y) :
     return True
 
 def in_range(x,y):
-    if 0 <= x and x < n and 0 <= y and y < n :
+    if 0 <= x and x < n and 0 <= y and y < m :
         return True
     return False
+
 
 dfs(0, 0)
 print(1 if answer[n-1][n-1] != 0 else 0)
