@@ -30,6 +30,6 @@ def in_range(x,y):
 
 
 dfs(0, 0)
-print(1 if answer[n-1][n-1] != 0 else 0)
+print(1 if answer[n-1][m-1] != 0 else 0)
         
 
