@@ -1,3 +1,4 @@
+import copy
 n, m = map(int, input().split())
 edges = [tuple(map(int, input().split())) for _ in range(m)]
 
@@ -15,6 +16,7 @@ def dfs(vertax) :
             dfs(curr_v)
 
 dfs(1)
-print(visited.count(True)-1)
+visited = copy.deepcopy(visited[2:])
+print(visited.count(True))
 
 # Please write your code here.
