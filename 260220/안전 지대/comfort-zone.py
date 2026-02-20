@@ -23,6 +23,7 @@ def dfs(x,y,k):
             dfs(next_x, next_y, k)
     return 1
 
+
 for k in range(1,max(map(max, grid))):
     visited = [[0 for _ in range(m)] for _ in range(n)]
     cnt = 0
@@ -30,9 +31,11 @@ for k in range(1,max(map(max, grid))):
         for y in range(m):
             if can_go(x,y,k):
                 cnt += dfs(x,y,k)
-    section_by_k.append([cnt,k])
+    section_by_k.append([k,cnt])
 
-
-section_by_k.sort(key = lambda x:(x[0], x[1]))
-print(*section_by_k[-1])
-
+section_by_k.sort(key = lambda x:(x[1], -x[0]))
+nothing = [1,0]
+try :
+    print(*section_by_k[-1])
+except :
+    print(*nothing)
