@@ -17,17 +17,18 @@ def can_go(x,y):
 
 def bfs(q):
     global visited
-    cnt = 0
+    cnt = 1
     while q :
         dxs, dys = [-1,0,1,0], [0,1,0,-1]
         xy = q.popleft()
         curr_x, curr_y = xy[0], xy[1]
+        visited[curr_x][curr_y] = True
         for dx, dy in zip(dxs, dys) :
             next_x, next_y = curr_x + dx, curr_y + dy
             if can_go(next_x, next_y) and not visited[next_x][next_y] :
                 visited[next_x][next_y] = True
                 cnt += 1
-                q.append([next_x, next_y])  
+                q.append([next_x, next_y]) 
     return cnt
 
     
@@ -36,5 +37,6 @@ visited = [[False for _ in range(n)] for _ in range(n)]
 answer = 0
 for point in points  :
     q = deque([[point[0]-1, point[1]-1]])
-    answer += bfs(q)
+    if not visited[point[0]-1][point[1]-1]:
+        answer += bfs(q)
 print(answer)
