@@ -26,7 +26,7 @@ def bfs(q) :
             if can_go(next_x, next_y) and not visited[next_x][next_y]   :
                 visited[next_x][next_y] =True
                 q.append([next_x, next_y])
-                if grid[next_x][next_x] == 1 and  (next_x == n-1 and next_y == m-1) :
+                if grid[next_x][next_y] == 1 and  (next_x == n-1 and next_y == m-1) :
                     return 1
     return 0
 print(bfs(q))
